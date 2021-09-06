@@ -1,0 +1,47 @@
+$breakpoint-phone: 568px;
+
+.tweet-con {
+  //   @media (max-width: $breakpoint-phone) {
+  //     .tweet {
+  //       width: 80%;
+  //     }
+  //   }
+  .tweet {
+    background-color: #243447;
+    display: flex;
+    margin-bottom: 5em;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 30px;
+    // width: 20vw;
+    color: #fff;
+
+    h2 {
+      color: #fff;
+      margin: 1.5em;
+    }
+    button {
+      width: 120px;
+      height: 40px;
+      cursor: pointer;
+      background: transparent;
+      border: 1px solid #91c9ff;
+      outline: none;
+      transition: 1s ease-in-out;
+      color: #fff;
+      margin-left: 10px;
+      border-radius: 10px;
+      &:hover {
+        background-color: #91c9ff;
+        color: #000;
+        font-weight: 700;
+      }
+    }
+
+    .btns {
+      display: flex;
+      flex-direction: row;
+      padding: 40px;
+    }
+  }
+}

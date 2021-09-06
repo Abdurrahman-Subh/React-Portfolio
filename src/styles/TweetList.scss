@@ -1,0 +1,18 @@
+.tweet-list {
+  float: left;
+  width: 85vw;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 0rem;
+}
+$breakpoint-tablet: 568px;
+@media (max-width: $breakpoint-tablet) {
+  .tweet-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+}

@@ -1,0 +1,13 @@
+
+.body {
+  padding-top: 50px;
+  
+}
+
+$breakpoint-tablet: 568px;
+@media (min-width: $breakpoint-tablet) {
+  .body {
+    display: flex;
+    flex-direction: column;
+  }
+}
