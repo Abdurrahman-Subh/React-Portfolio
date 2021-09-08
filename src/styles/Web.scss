@@ -1,43 +1,122 @@
-.web{
+.web {
+  width: 100%;
+  height: 50vh;
+  margin-top: 8rem;
+  color: #fff;
+
+  .left {
+    float: left;
+    width: 50%;
+    height: 100%;
+    h1 {
+      width: 50%;
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+      span {
+        color: #ff2442;
+      }
+    }
+    p {
+      padding-top: 4em;
+      width: 80%;
+      margin-left: auto;
+      margin-right: auto;
+      font-size: 1.5rem;
+    }
+  }
+  .right {
+    float: left;
+    width: 50%;
+    height: 100%;
+    text-align: center;
+    img {
+      width: 40%;
+      height: auto;
+      text-align: center;
+    }
+  }
+}
+
+.bg {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.95),
+      rgba(0, 22, 46, 0.95)
+    ),
+    url("../photos/pexels1.jpg");
+  background-size: cover;
+  height: 100vh;
+  padding: 20px;
+  margin-top: 150px;
+  color: #0664cf;
+  .project-title {
+    color: #0664cf;
+  }
+  .projects {
+    .projects-images {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding-left: 12.5%;
+      font-size: 1.2rem;
+    }
+  }
+}
+
+.first-img {
+  .overlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 14%;
+    position: absolute;
+    color: #fff;
+    font-weight: bold;
+    text-align: right;
+    font-size: 30px;
+  }
+
+  img {
     width: 100%;
-    height: 50vh;
-    margin-top: 4rem;
-    
+    position: relative;
+    filter: blur(9.08px) invert(0.32);
+  }
+}
 
-        .left{
-            float: left; 
-            width: 50%;
-            height: 100%;
-                h1{
-                    width: 50%;
-                    text-align: center;
-                    margin-left: auto;
-                    margin-right: auto;
-                        span{
-                            color: #FF2442;
-                        }
-                    
-                }
-                p{
-                    padding-top: 4em;
-                    width: 80%;
-                    margin-left: auto;
-                    margin-right: auto;
-                    font-size: 1.5rem;
-                }
-                   
-        }
-        .right{
-            float: left;
-            width: 50%;
-            height: 100%;
-            text-align: center;
-                img{
-                    width: 40%;
-                    height: auto;
-                    text-align: center;
-                  
-                }
-        }
+.second-img {
+  .overlay {
+    left: 46%;
+    position: absolute;
+    color: #fff;
+    font-weight: bold;
+    text-align: right;
+    font-size: 30px;
+  }
 
+  img {
+    width: 100%;
+    position: relative;
+    filter: blur(9.08px) invert(0.32);
+  }
+}
+.third-img {
+  img {
+    width: 100%;
+    position: relative;
+    filter: blur(25.08px) invert(0.52);
+  }
+  .overlay {
+    left: 77%;
+    position: absolute;
+    color: #fff;
+    font-weight: bold;
+    text-align: right;
+    font-size: 30px;
+  }
+}
+.project-title h2 {
+  color: #0664cf;
 }

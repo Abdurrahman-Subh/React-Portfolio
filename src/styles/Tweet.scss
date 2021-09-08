@@ -7,7 +7,13 @@ $breakpoint-phone: 568px;
   //     }
   //   }
   .tweet {
-    background-color: #243447;
+    background-image: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.95),
+        rgba(0, 42, 86, 0.65)
+      ),
+      url("../photos/pexels1.jpg");
+    background-size: cover;
     display: flex;
     margin-bottom: 5em;
     align-items: center;

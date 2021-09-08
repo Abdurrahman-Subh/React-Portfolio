@@ -1,0 +1,146 @@
+.about {
+  margin-top: -75px;
+}
+
+.divs {
+  margin-top: 150px;
+}
+.main-header {
+  text-align: center;
+  margin-top: 155px;
+  color: #0664cf;
+}
+
+.main-photo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main-photo img {
+  width: 20%;
+}
+/*Projects */
+.projects {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  height: 75vh;
+}
+.project-title {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+
+  width: 100%;
+  color: #fff;
+}
+.firstProjectTitle {
+  width: 33%;
+  text-align: center;
+}
+.secondProjectTitle {
+  width: 33%;
+  text-align: center;
+}
+.thirdProjectTitle {
+  width: 33%;
+  text-align: center;
+}
+
+.first-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 33%;
+  height: 100%;
+  float: left;
+}
+.second-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 33%;
+  height: 100%;
+  float: left;
+}
+.third-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 33%;
+  height: 100%;
+  float: left;
+}
+.projects img {
+  width: 70%;
+}
+/*Bootcamp*/
+.bootcamp {
+  width: 100%;
+  height: 75vh;
+}
+.bootcamp-title {
+  text-align: center;
+  color: #fff;
+}
+.bootcamp-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.img-col {
+  width: 33%;
+  float: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+.bootcamp-img img {
+  width: 50%;
+}
+.bootcamp-p {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  color: #fff;
+}
+.firstBootcampP {
+  text-align: center;
+  width: 33%;
+}
+.secondBootcampP {
+  text-align: center;
+  width: 33%;
+}
+.thirdBootcampP {
+  text-align: center;
+  width: 33%;
+}
+.thank-kod {
+  background-color: #911f27;
+  width: 100%;
+  height: 85vh;
+}
+.thank-left {
+  float: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  background-color: #f3f3f3;
+  height: 100%;
+}
+.thank-right {
+  width: 50%;
+  float: right;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.thank-right img {
+  width: 100%;
+  vertical-align: middle;
+}

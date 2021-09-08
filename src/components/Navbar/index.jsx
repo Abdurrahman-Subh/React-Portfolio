@@ -7,8 +7,11 @@ import {
     NavMenu,
     NavBtn,
     NavBtnLink,
-} from "./NavbarElements";
-const Navbar = () => {
+} from "./NavbarElementsMain";
+function Navbar ({Logout}) {
+    const refreshPage = ()=>{
+        window.location.reload();
+     }
     return (
         <>
            <Nav>
@@ -30,11 +33,9 @@ const Navbar = () => {
                 <NavLink to="/weather" activeStyle>
                    Try Out Weather
                 </NavLink>
-                <NavLink to="/signin" activeStyle>
-                    Sign In
-                </NavLink>
+            
                 <NavBtn>
-                    <NavBtnLink to="/sign-up">Sign Up</NavBtnLink>                
+                    <NavBtnLink onClick={refreshPage} to="/">Log Out</NavBtnLink>                
                 </NavBtn>
             </NavMenu> 
            </Nav> 

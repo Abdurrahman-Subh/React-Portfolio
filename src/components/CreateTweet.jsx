@@ -20,10 +20,10 @@ const CreateTweet = ({tweets, setTweets, textInput,SetTextInput}) => {
         <form onSubmit={submitTweetHandler}>
             <textarea value={textInput}
              onChange={userInputHandler}
-              cols="30" rows="5"
+              cols="50" rows="5"
               placeholder="Enter Tweet"
               ></textarea>
-            <button >Submit</button>
+            <button className="submit-tweet">Submit</button>
             
         </form>
         </div>

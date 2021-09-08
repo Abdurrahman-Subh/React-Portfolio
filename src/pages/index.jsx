@@ -10,7 +10,7 @@ const Twitter = () => {
   const [name1, setName1] =  useState('Dev Abdurrahman');
   return (    
     <div className="body">
-      <h1>Siteme Hoş Geldiniz!</h1>
+      <h1>Welcome {name1}!</h1>
       <div className="tweet-con">
         
       <CreateTweet textInput={textInput}

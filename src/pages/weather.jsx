@@ -1,64 +1,42 @@
-import React from 'react';
+import React, { useState } from 'react';
 import  m3o from '@m3o/m3o-node' ;
 import '../styles/Weather.css';
+import { fetchWeather } from '../components/api/fetchWeather';
 export default function Weather() {
     
-        
-            const [location, setLocation] = React.useState("");
-            const [result, setResult] = React.useState(null);
-          
-            const fetchWeather = () => {
-              new m3o.Client({
-             token: 'NDExZmQzZGEtYWY1NS00MDFkLWE5YmUtYzAwMWE1ZmY0NmFi' 
-            })
-            .call('weather', 'Now', {
-              
-              "location": location
-          })
-            .then((response) => {
-              console.log(response);
-              setResult({
-                location: response.location,
-                condition: response.condition,
-                temp: response.temp_c
-                 
-              });
-          });
-            };
+  const [query, setQuery] = useState('');
+  const [weather, setWeather] = useState({});
+  
+  const search = async (e) => {
+      if(e.key === 'Enter') {
+          const data = await fetchWeather(query);
+
+          setWeather(data);
+          setQuery('');
+      }
+  }
+         
     
-    return (
-      <div className="main-weather">
-        
-        
-        
-          <div className="welcome">
-          <h1>Welcome To Our Forecast System</h1>
-        
-          <div className="info">
-            <h2>Enter The City Please</h2>
-        <input
-        value={location}
-        onChange={(e)=>{
-          setLocation(e.target.value);
-        }}
-        type="text"
-        />
-        <button onClick={fetchWeather}>Enter</button>
-       
-        {result ? (
-          <div className="answer">
-              
-             <h1>The City: {result.location}</h1> <br /><br />
-             <h2>Temperature: {result.temp} C</h2>
-             <h3>Condition: {result.condition}</h3>
-          </div>
-        ) :null}
-          
-       
-       
-      </div>
-      </div>
-      </div>
-    )
+    return  (
+    <div className="main-container">
+    <input type="text"className="search"placeholder="Search..."value={query}onChange={(e) => setQuery(e.target.value)}onKeyPress={search}/>
+    {weather.main && (
+        <div className="city">
+            <h2 className="city-name">
+                <span>{weather.name}</span>
+                <sup>{weather.sys.country}</sup>
+            </h2>
+            <div className="city-temp">
+                {Math.round(weather.main.temp)}
+                <sup>&deg;C</sup>
+            </div>
+            <div className="info">
+                <img className="city-icon" src={`https://openweathermap.org/img/wn/${weather.weather[0].icon}@2x.png`} alt={weather.weather[0].description} />
+                <p>{weather.weather[0].description}</p>
+            </div>
+        </div>
+    )}
+</div>
+);
 }
        
