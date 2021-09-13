@@ -17,7 +17,7 @@ import Avatar from '../photos/avatar.svg';
     }
 
     return (
-        <div>
+        <div className={styles.loginFormBg}>
        <img className={styles.wave} src={Wave} />
 	<div className={styles.container}>
 		<div className={styles.img}>
