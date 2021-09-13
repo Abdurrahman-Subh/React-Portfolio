@@ -3,7 +3,7 @@
   background-image: linear-gradient(
       to bottom,
       rgba(0, 0, 0, 0.95),
-      rgba(0, 22, 46, 0.95)
+      rgba(0, 22, 46, 1)
     ),
     url("../photos/pexels1.jpg");
   background-size: cover;
