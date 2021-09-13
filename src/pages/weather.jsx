@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import  m3o from '@m3o/m3o-node' ;
 import '../styles/Weather.css';
 import { fetchWeather } from '../components/api/fetchWeather';
 export default function Weather() {
