@@ -13,7 +13,7 @@ export default function Footer() {
                          <h3 className="text-muted mb-md-0 mb-5 bold-text h3">Abdurrahman.</h3>
                      </div>
                      <div className="col-xl-2 col-md-4 col-sm-4 col-12">
-                         <h6 className="mb-3 mb-lg-4 bold-text "><b>MENU</b></h6>
+                         <h6 className="mb-3 mb-lg-4 bold-text "><b>Contact Me</b></h6>
                          <ul className="list-unstyled">
                              <li><a href="https://www.linkedin.com/in/abdurrahman-subh/" target="_blank">Linkden</a></li>
                              <li><a href="https://github.com/Abdurrahman-Subh/" target="_blank">Github</a></li>
